@@ -1,5 +1,11 @@
 # SahipOl E-Ticaret Sitesi
 
+## Proje Dizini
+
+- **e_ticaret/** — Tüm kaynak kodlar, PHP dosyaları ve site ana yapısı bu klasördedir.
+- **images/** — Ekran görüntüleri ve veritabanı diyagramı bu klasörde yer alır.
+
+
 Bu proje, web programlama dersi kapsamında PHP ve SQL Server kullanılarak geliştirilmiş bir e-ticaret sitesidir.
 
 ## Özellikler
