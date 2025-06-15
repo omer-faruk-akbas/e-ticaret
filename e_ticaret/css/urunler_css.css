@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    background: linear-gradient(to left, #f8f9fa, #00b4d8, #03045e); /* Beyaz, açık mavi, koyu mavi geçişi */
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Sol Menü */
+.sidebar {
+    width: 250px;
+    padding: 20px;
+    background: linear-gradient(to bottom, #03045e, #0077b6, #90e0ef); /* Koyu mavi, mavi, açık mavi geçiş */
+    color: white;
+    border-right: 1px solid #ddd;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar h3 {
+    margin-bottom: 15px;
+    color: #fff; /* Beyaz başlık */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #f8f9fa; /* Beyaz metin */
+    font-weight: bold;
+    display: block;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #ffd700; /* Altın sarısı hover efekti */
+}
+
+.sidebar .buttons button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    background: linear-gradient(to right, #ffd700, #ffffff); /* Sarıdan beyaza geçiş */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Geçiş efektleri */
+}
+
+.sidebar .buttons button:hover {
+    background: linear-gradient(to left, #ffffff, #ffd700); /* Hoverda ters geçiş */
+    transform: scale(1.05); /* Hafif büyütme efekti */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Hoverda gölge efekti */
+}
+
+/* Ürün Kartları */
+.container {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+    text-align: center;
+    background-color: white;
+    transition: transform 0.2s, box-shadow 0.3s; /* Hover için animasyon */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Hoverda büyütme ve gölge */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #03045e; /* Koyu mavi başlık */
+}
+
+.card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.card .add-to-cart {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background: linear-gradient(to right, #ffd700, #ffffff); /* Sarıdan beyaza geçiş */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+.card .add-to-cart:hover {
+    background: linear-gradient(to left, #ffffff, #ffd700); /* Hoverda ters geçiş */
+    transform: scale(1.05); /* Hafif büyütme efekti */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Hoverda gölge efekti */
+}
+
+/* Üst Menü ve Arama Çubuğu */
+.topbar {
+    width: 100%;
+    padding: 15px 20px;
+    background: linear-gradient(to right, #03045e, #0077b6, #90e0ef); /* Koyu mavi, mavi, açık mavi geçiş */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.topbar h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-right: auto;
+    color: #ffd700; /* Altın sarısı */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.search-bar input:focus {
+    border-color: #0077b6; /* Odakta mavi çerçeve */
+    outline: none;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.search-bar button:hover {
+    background-color: #ffc107;
+
+    transform: scale(1.05);
+}

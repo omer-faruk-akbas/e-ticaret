@@ -1,0 +1,99 @@
+
+/* Genel Ayarlar */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #03045e, #0077b6, #90e0ef);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    color: #FFD700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.info {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.info label {
+    font-weight: bold;
+    color: #0077b6;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.info input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.info input:focus {
+    border-color: #6A0DAD;
+    box-shadow: 0 0 5px rgba(106, 13, 173, 0.5);
+    outline: none;
+}
+
+/* Buton Stilleri */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-back {
+    background: linear-gradient(to right, #4CAF50, #8BC34A);
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-back:hover {
+    background: linear-gradient(to left, #8BC34A, #4CAF50);
+}
+
+.btn-logout {
+    background: linear-gradient(to right, #f44336, #ff1744);
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.btn-logout:hover {
+    background: linear-gradient(to left, #ff1744, #f44336);
+}
+
+.btn-update {
+    background: linear-gradient(to right, #00b4d8, #03045e);
+    color: white;
+    width: 100%;
+}
+
+.btn-update:hover {
+    background: linear-gradient(to left, #03045e, #00b4d8);
+}
